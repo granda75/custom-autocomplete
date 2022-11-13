@@ -1,0 +1,22 @@
+.container {
+  margin:0 auto;
+  width: 700px;
+  height: 400px;
+  padding: 4%;
+  background-color: cadetblue;
+}
+
+.search {
+  z-index: 1000;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #f5f5f5;
+  font-family: sans-serif;
+  opacity: 0.98;
+  width:152px;
+}
+
+.label {
+  font-size: 20px;
+  color: #707070;
+}

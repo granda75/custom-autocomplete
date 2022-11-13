@@ -1,0 +1,20 @@
+<div class="container">
+
+  <div>
+    <div class="label">
+      <label for="city">Search City:</label>
+    </div>
+    <input id="city" #citySearchInput placeholder="Search City By Name" type="text" autocomplete="off" (click)="startSearch()">
+    <div name="citiesListDiv" *ngIf="showSearches==true && searchedCities.length > 0">
+      <div class="search">
+        <div *ngFor="let city of searchedCities;" (click)="setObjectName(city)" >
+          {{city}}
+        </div>
+      </div>
+    </div>
+
+    <p class="search" *ngIf="searchedCities && searchedCities.length <= 0 && !isSearching">No City found</p>
+    <p class="search" [hidden]="!isSearching">Searching cities...</p>
+  </div>
+</div>
+
