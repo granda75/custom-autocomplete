@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'custom-autocomplete';
+  city: string = '';
+  title = 'cities-autocomplete';
+
+  setCityName($event: any) {
+    this.city = $event.name;
+  }
 }
